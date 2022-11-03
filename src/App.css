@@ -1,0 +1,152 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/* IMPORTS */
+
+/* RESET */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* RESET */
+
+/* KEYFRAMES */
+
+@keyframes dissappear {
+  25%{opacity: 1;}
+  50%{opacity: 0.7;}
+  75%{opacity: 0.4;}
+  100%{opacity: 0;}
+}
+
+@keyframes appear {
+  0%{opacity: 0;}
+  25%{opacity: 0.2;}
+  50%{opacity: 0.4;}
+  75%{opacity: 0.7;}
+  100%{opacity: 1;}
+}
+
+/* KEYFRAMES */
+
+/* KEYFRAMES CLASSES */
+
+.dissappear{
+  animation-name: dissappear;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.appear{
+  animation-name: appear;
+  animation-duration: 1s;
+}
+/* KEYFRAMES CLASSES */
+
+/* BODY */
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #FFF5EC;
+}
+
+/* BODY */
+
+
+/* HOME */
+
+.home{
+  height: 100vh;
+  width: 100%;
+gap: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-title{
+  display: flex;
+  flex-direction: column;
+}
+.home-title h1{
+font-size: 64px;
+}
+.home-title h4{
+font-size: 32px;
+}
+.home-subtitle{
+
+}
+.home-subtitle button{
+  font-size: 34px;
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* HOME */
+
+/* ABOUT */
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.left{
+  display: flex;
+  padding: 5em;
+  align-items: center;
+  height: 100%;
+width: 50%;
+flex-direction: column;
+}
+
+.left-title{
+  height: 10%;
+  font-size: 32px;
+  font-weight:700;
+}
+.left-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  text-align: center;
+  width: 40%;
+font-size: 24px;
+font-weight:700;
+}
+
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  height: 100%;
+  width: 50%;
+  padding: 5em;
+}
+.right div{
+height: 90%;
+width: 100%;
+background-color: #FFE4DB;
+}
+.right a{
+  height: 10%;
+  font-size: 32px;
+  text-decoration:none;
+
+}
+/* ABOUT */
